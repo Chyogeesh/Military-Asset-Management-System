@@ -10,3 +10,7 @@ router.put("/:id", authorizeRoles("Admin", "Commander"), ctrl.updateAsset);
 router.delete("/:id", authorizeRoles("Admin"), ctrl.deleteAsset);
 
 module.exports = router;
+app.use("/api/assets", require("./routes/asset"));
+app.use("/api/purchases", require("./routes/purchase"));
+app.use("/api/transfers", require("./routes/transfer"));
+app.use("/api/assignments", require("./routes/assignment"));
