@@ -11,3 +11,6 @@ mkdir server
 military-asset-management/
 ├── client/         # React App
 └── server/         # Node.js Backend
+npx nodemon server.js
+npm install -g nodemon
+nodemon server.js
