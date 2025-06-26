@@ -8,3 +8,6 @@ mkdir military-asset-management
 cd military-asset-management
 npx create-react-app client
 mkdir server
+military-asset-management/
+├── client/         # React App
+└── server/         # Node.js Backend
