@@ -4,3 +4,7 @@ military-asset-management/
 ├── .env
 ├── README.md
 └── docker-compose.yml   # (optional for containerization)
+mkdir military-asset-management
+cd military-asset-management
+npx create-react-app client
+mkdir server
