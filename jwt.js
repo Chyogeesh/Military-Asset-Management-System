@@ -14,3 +14,5 @@ exports.auditLogger = async (req, _res, next) => {
   }
   next();
 };
+const { auditLogger } = require("./middleware/authMiddleware");
+app.use(auditLogger);
