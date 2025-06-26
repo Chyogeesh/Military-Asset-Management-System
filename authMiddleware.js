@@ -21,3 +21,8 @@ exports.authorizeRoles = (...roles) => {
     next();
   };
 };
+const { verifyToken, authorizeRoles } = require("../middleware/authMiddleware");
+
+router.get("/admin-data", verifyToken, authorizeRoles("Admin"), (req, res) => {
+  res.json({ message: "Only admin can see this" });
+});
