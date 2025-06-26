@@ -14,3 +14,4 @@ military-asset-management/
 npx nodemon server.js
 npm install -g nodemon
 nodemon server.js
+npm start
