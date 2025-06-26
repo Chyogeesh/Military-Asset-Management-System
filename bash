@@ -15,3 +15,4 @@ npx nodemon server.js
 npm install -g nodemon
 nodemon server.js
 npm start
+http://localhost:5000/api/auth/register
